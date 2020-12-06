@@ -1,0 +1,7 @@
+{
+  "name": "ionic-html5-audio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
