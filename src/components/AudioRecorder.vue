@@ -71,14 +71,14 @@ export default {
       const r = await AudioRecorder.stop();
     };
 
-    const startPlaying = () => {
-      AudioRecorder.startPlaying({ fileName: filePath });
+    const startPlaying = async () => {
+      await AudioRecorder.startPlaying({ fileName: filePath });
     };
 
-    const stopPlaying = () => {
-      AudioRecorder.stopPlaying();
+    const stopPlaying = async () => {
+      await AudioRecorder.stopPlaying();
 
-      AudioRecorder.deleteRecording({ fileName: filePath });
+      await AudioRecorder.deleteRecording({ fileName: filePath });
     };
 
     return {
